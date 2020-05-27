@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HomeWork_017</string>
+    <string name="hello_world">Привет Мир</string>
+    <string name="button">Применить</string>
+    <string name="choose_theme">Выбери тему:</string>
+    <string name="eng">Английский</string>
+    <string name="rus">Русский</string>
+
+<!--    <string-array name="styleTheme">-->
+<!--    <item>ааа</item>-->
+<!--    <item>черный</item>-->
+<!--    <item>зеленый</item>-->
+<!--    <item>синий</item>-->
+
+</resources>
