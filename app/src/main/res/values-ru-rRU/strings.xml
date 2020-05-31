@@ -7,9 +7,9 @@
     <string name="rus">Русский</string>
 
 <!--    <string-array name="styleTheme">-->
-<!--    <item>ааа</item>-->
-<!--    <item>черный</item>-->
-<!--    <item>зеленый</item>-->
-<!--    <item>синий</item>-->
+<!--    <item name="default">стандарт</item>-->
+<!--    <item name="black">черный</item>-->
+<!--    <item name="green">зеленый</item>-->
+<!--    <item name="blue">синий</item>-->
 
 </resources>

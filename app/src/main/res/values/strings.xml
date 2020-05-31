@@ -7,9 +7,9 @@
     <string name="rus">Russian</string>
 
     <string-array name="styleTheme">
-        <item>default</item>
-        <item>black</item>
-        <item>green</item>
-        <item>blue</item>
+        <item name="default">default</item>
+        <item name="black">black</item>
+        <item name="green">green</item>
+        <item name="blue">blue</item>
     </string-array>
 </resources>

@@ -27,20 +27,26 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         initSpinnerCountries();
         onClick();
+
     }
 
     private void initSpinnerCountries() {
-        ArrayAdapter<CharSequence> adapterCountries = ArrayAdapter.createFromResource(this,
+        ArrayAdapter<CharSequence> adapterTheme = ArrayAdapter.createFromResource(this,
                 R.array.styleTheme, android.R.layout.simple_spinner_item);
-        spinner.setAdapter(adapterCountries);
+        spinner.setAdapter(adapterTheme);
     }
 
     private void onClick() {
+
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
+
                 int selectedId = radioGroup.getCheckedRadioButtonId();
+
                 switch (selectedId) {
+
                     case R.id.radioButtonRus: {
                         switchLokale("ru");
                         break;
@@ -49,9 +55,11 @@ public class MainActivity extends AppCompatActivity {
                         switchLokale("en");
                         break;
                     }
+
                 }
 
                 int selected = spinner.getSelectedItemPosition();
+
                 switch (selected) {
                     case 0:
                         Utils.changeToTheme(MainActivity.this, Utils.THEME_DEFAULT);
@@ -66,8 +74,11 @@ public class MainActivity extends AppCompatActivity {
                         Utils.changeToTheme(MainActivity.this, Utils.THEME_BLUE);
                         break;
                 }
+
             }
+
         });
+        recreate();
     }
 
     public void switchLokale(String language) {
@@ -75,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
         Configuration config = new Configuration();
         config.setLocale(locale);
         getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-        recreate();
     }
 }
 
