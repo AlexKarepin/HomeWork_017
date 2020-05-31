@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         spinner = findViewById(R.id.spinner);
         button = findViewById(R.id.button);
         initSpinnerCountries();
-        onClick();
+        onClickMy();
 
     }
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setAdapter(adapterTheme);
     }
 
-    private void onClick() {
+    private void onClickMy() {
 
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -74,11 +74,11 @@ public class MainActivity extends AppCompatActivity {
                         Utils.changeToTheme(MainActivity.this, Utils.THEME_BLUE);
                         break;
                 }
-
+                recreate();
             }
 
         });
-        recreate();
+
     }
 
     public void switchLokale(String language) {
